@@ -4,17 +4,17 @@ FONTES
 
 @font-face {
     font-family: IBMPlexMono-Regular;
-    src: url("../../fonts/IBMPlexMono-Regular.ttf");
+    src: url("/fonts/IBMPlexMono-Regular.ttf");
 }
 
 @font-face {
     font-family: IBMPlexMono-Bold;
-    src: url("../../fonts/IBMPlexMono-Bold.ttf");
+    src: url("/fonts/IBMPlexMono-Bold.ttf");
 }
 
 @font-face {
     font-family: HealTheWebA-Regular;
-    src: url("../../fonts/HealTheWebA-Regular.otf");
+    src: url("/fonts/HealTheWebA-Regular.otf");
 }
 
 
