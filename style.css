@@ -1,0 +1,217 @@
+/* 
+FONTES
+*/
+
+@font-face {
+    font-family: IBMPlexMono-Regular;
+    src: url("../../fonts/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: IBMPlexMono-Bold;
+    src: url("../../fonts/IBMPlexMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: HealTheWebA-Regular;
+    src: url("../../fonts/HealTheWebA-Regular.otf");
+}
+
+
+/*
+UTILITÁRIOS
+*/
+
+body {
+    transition: ease;
+    transition-duration: .3s;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: IBMPlexMono-Regular;
+    height: fit-content;
+    background-size: cover;
+}
+
+p,
+h1,
+a {
+    color: white;
+}
+
+main {
+    display: grid;
+    padding: 10vh 6vw;
+    justify-content: left;
+    align-content: center;
+    width: 20vw;
+    height: calc(100vh - 55vh);
+    /* background: rgba(0, 0, 0, 0.76);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+button {
+    background: none;
+    color: white;
+    font-family: IBMPlexMono-Regular;
+    border: none;
+    padding: 0;
+    margin: .2rem .5rem;
+    text-align: start;
+    font-size: 12pt;
+    transition: ease;
+    transition-duration: .3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 15vh;
+}
+
+main a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 65px;
+    height: 15vh;
+    transition: ease-in;
+    transition-duration: .3s;
+}
+
+footer img {
+    grid-row: 1/3;
+    align-self: center;
+}
+
+footer #div-footer {
+    grid-column: 2;
+    padding: 0px 0px 0px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#div-footer p {
+    margin: 0;
+}
+
+
+/*
+
+CLASSES & IDS
+
+*/
+#p-menu,
+#p-random {
+    font-family: IBMPlexMono-Bold;
+}
+
+.header {
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 65px 0px 65px;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: row;
+    transition: ease-in;
+    transition-duration: .3s;
+}
+
+#logo {
+    font-family: HealTheWebA-Regular;
+    text-decoration: none;
+    color: white;
+    font-size: 24pt;
+    padding-right: 87px;
+    justify-self: left;
+}
+
+.menu {
+    padding: 0px 5px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    align-content: center;
+    flex: 0;
+}
+
+.menu .toggle {
+    width: 85px;
+    height: 85px;
+    border: none;
+    place-self: center;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.random {
+    padding: 0px 5px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+}
+
+.random .toggle {
+    width: 85px;
+    height: 85px;
+    border: none;
+    place-self: center;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.social {
+    justify-self: center;
+    display: flex;
+    gap: 10px;
+    padding: 5px 24px 0px 0px;
+    transition: ease-in;
+    transition-duration: .3s;
+}
+
+.social a {
+    position: relative;
+}
+
+.social a:hover .imgon {
+    display: block;
+}
+
+.social a .imgon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+#principal {
+    background: rgba(0, 0, 0, 0.75);
+    transition: ease;
+    transition-duration: .3s;
+}
+
